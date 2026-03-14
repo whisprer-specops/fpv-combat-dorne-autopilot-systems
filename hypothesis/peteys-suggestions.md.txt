@@ -1,0 +1,5 @@
+fren, i got a bit of a topic am getting stuck into:
+
+• Electronic Warfare Vulnerability: Adversary anti-drone systems frequently cause operators to lose control. Concepts for autonomous "Kill" modes are designed to mitigate this, but maintaining a targeting lock without GPS or remote pilot input remains a significant hurdle
+
+could you have a bit of a think upon this topic and gimme some kinda hypothesis toward a solution i could propose to use for my investigation and study please!

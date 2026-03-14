@@ -1,0 +1,32 @@
+1. Problem Addressed:​​The paper highlights the challenges in regulatory compliance auditing across various industrial sectors, particularly in agrifood facilities. Current manual auditing methods are intermittent, lack traceability, and can lead to oversights, especially in critical hygiene regulations like knife sanitization.
+
+​​2. Proposed Solution:​​The authors introduce a real-time, multi-modal sensing system designed for continuous object tracking on edge AI devices. This system aims to enhance efficiency in record-keeping and minimize manual interventions in compliance monitoring.
+
+​​3. System Components and Technology:​​
+
+​​Multi-modal Sensing:​​ The system integrates a 3D Time-of-Flight (ToF) camera and an RGB camera. The ToF camera provides depth information, which is crucial for distinguishing between static and dynamic objects and for robust performance in low-light conditions and against occlusion, where RGB cameras might struggle.
+​​Edge AI Devices:​​ The system is designed to operate on edge AI devices, leveraging their growing computational power for real-time processing.
+​​Unsupervised Learning:​​ The prototype employs unsupervised multi-modal detection to identify object positions without the need for extensive manual annotation.
+​​Hardware:​​
+​​ToF Camera:​​ Intel® RealSense™ ToF camera (compact, lightweight, high-resolution, 30Hz frame rate for both RGB and ToF).
+​​Edge AI Device:​​ NVIDIA® Jetson AGX Orin™ development kit.
+​​Software Pipeline:​​
+​​Robot Operating System 2 (ROS 2):​​ Used for managing multi-modal data streams, device control, message-passing, and package management.
+​​Preprocessing:​​
+​​Static environment prescan:​​ Creates a static background model.
+​​Background subtraction:​​ Uses coarse-to-fine filtering to remove the static background from point clouds.
+​​Accumulation of points:​​ Uses a FIFO queue to create denser point clouds from successive frames.
+​​3D Object Detection:​​
+​​Random sampling:​​ Reduces noise and unevenness in point distribution.
+​​Gaussian Kernel Density Estimation (KDE):​​ Predicts density maps of point clouds to handle closely clumped objects and enhances separability using percentile filtering.
+​​HDBSCAN:​​ Determines the number of objects (e.g., knives) present by clustering the processed point clouds.
+​​Simple Online and Real-time Tracking (SORT):​​ Tracks multiple objects in real-time by projecting 3D cluster centroids from HDBSCAN onto a 2D image plane.
+​​Hand Detection:​​ Uses MediaPipe Hand Landmarker to detect hands, temporarily halting knife counting to prevent occlusion issues.
+​​4. Validation and Results:​​
+
+​​Context:​​ The system was validated in a knife sanitization context within agrifood facilities, simulating real-world scenarios.
+​​Experiment Setup:​​ A ToF camera was set up to capture a top-down view of a knife sterilizer. Five scenarios were tested, each with 1 to 5 knives, with 50 unique instances per scenario.
+​​Performance Metrics:​​ Mean Absolute Error (MAE), Root Mean Square Error (RMSE), and Normalized RMSE (NRMSE) were used to quantify discrepancies between predictions and ground truth.
+​​Findings:​​ The system demonstrated commendable performance, even with a slight increase in detection error as the number of objects increased (attributed to challenges in point cloud clustering). Despite these complexities, the system consistently performed well across different object counts, highlighting its reliability.
+​​5. Broader Implications:​​While validated in knife sanitization, the system's potential extends to various industrial monitoring settings, offering a robust solution for automated regulatory compliance checkpoints, reduced labor costs, and enhanced quality assurance through continuous monitoring and systematic record-keeping.
+
