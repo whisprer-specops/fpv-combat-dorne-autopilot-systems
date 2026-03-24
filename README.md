@@ -1,16 +1,32 @@
-[README.md]
+<!-- repo-convergence:readme-header:start -->
+<!-- repo-convergence:language=FILL_ME -->
+# fpv-combat-drone-autopilot-systems
 
 <p align="center">
-  <a href="https://github.com/whisprer/fpv-combat-dorne-autopilot-systems">
-    <img src="https://img.shields.io/github/stars/whisprer/fpv-combat-dorne-autopilot-systems?style=for-the-badge" alt="GitHub stars" />
+  <a href="https://github.com/whisprer/fpv-combat-drone-autopilot-systems/releases">
+    <img src="https://img.shields.io/github/v/release/whisprer/fpv-combat-drone-autopilot-systems?color=4CAF50&label=release" alt="Release Version">
   </a>
-  <a href="https://github.com/whisprer/fpv-combat-dorne-autopilot-systems/issues">
-    <img src="https://img.shields.io/github/issues/whisprer/fpv-combat-dorne-autopilot-systems?style=for-the-badge" alt="GitHub issues" />
+  <a href="https://github.com/whisprer/fpv-combat-drone-autopilot-systems/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-Hybrid-green.svg" alt="License">
   </a>
-  <a href="https://github.com/whisprer/fpv-combat-dorne-autopilot-systems/fork">
-    <img src="https://img.shields.io/github/forks/whisprer/fpv-combat-dorne-autopilot-systems?style=for-the-badge" alt="GitHub forks" />
+  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg" alt="Platform">
+  <a href="https://github.com/whisprer/fpv-combat-drone-autopilot-systems/actions">
+    <img src="https://img.shields.io/badge/build-workflow%20not%20set-lightgrey.svg" alt="Build Status">
   </a>
 </p>
 
-# fpv-combat-dorne-autopilot-systems
+[![GitHub](https://img.shields.io/badge/GitHub-whisprer%2Ffpv-combat-drone-autopilot-systems-blue?logo=github&style=flat-square)](https://github.com/whisprer/fpv-combat-drone-autopilot-systems)
+![Commits](https://img.shields.io/github/commit-activity/m/whisprer/fpv-combat-drone-autopilot-systems?label=commits)
+![Last Commit](https://img.shields.io/github/last-commit/whisprer/fpv-combat-drone-autopilot-systems)
+![Issues](https://img.shields.io/github/issues/whisprer/fpv-combat-drone-autopilot-systems)
+[![Version](https://img.shields.io/badge/version-3.1.1-blue.svg)](https://github.com/whisprer/fpv-combat-drone-autopilot-systems)
+[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)](https://www.microsoft.com/windows)
+[![Language](https://img.shields.io/badge/language-FILL_ME-blue.svg)](#)
+[![Status](https://img.shields.io/badge/Status-Alpha%20Release-orange?style=flat-square)](#)
+
+<p align="center">
+  <img src="/assets/fpv-combat-drone-autopilot-systems-banner.png" width="850" alt="fpv-combat-drone-autopilot-systems Banner">
+</p>
+<!-- repo-convergence:readme-header:end -->
+
 why not do a phd/postdoc research project for fun and what better topic?
